@@ -1075,7 +1075,7 @@ washBut.mousePressed(()=>{
     appState=18;
 })
 philadelphiaBut.mousePressed(async()=>{
-    var response=await fetch("http://api.weatherapi.com/v1/current.json?key=469320127ae8429099f105012212407&q&q=philadelphia&aqi=no");
+    var response=await fetch("https://api.weatherapi.com/v1/current.json?key=469320127ae8429099f105012212407&q&q=philadelphia&aqi=no");
     var responseJSON=await response.json();
      philadelphiahr=await responseJSON.location.localtime.slice(10,16)
     
